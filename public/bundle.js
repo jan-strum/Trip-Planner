@@ -101,10 +101,11 @@ eval("/* Mapbox GL JS is licensed under the 3-Clause BSD License. Full text of l
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const mapboxgl = __webpack_require__(/*! mapbox-gl */ \"./node_modules/mapbox-gl/dist/mapbox-gl.js\");\n\nmapboxgl.accessToken = 'pk.eyJ1Ijoiem1hcnN6YWwiLCJhIjoiY2pyOW5ud25zMGphNjQzbGluanB5b3Y3ayJ9.Mm92jc4dS81FaLIePR3cuA';\n\nconst map = new mapboxgl.Map({\n  container: \"map\",\n  center: [-74.009, 40.705], // FullStack NY coordinates; alternatively, use [-87.6354, 41.8885] for Chicago\n  zoom: 12, // starting zoom\n  style: \"mapbox://styles/mapbox/streets-v10\" // mapbox has lots of different map styles available.\n});\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mapbox-gl */ \"./node_modules/mapbox-gl/dist/mapbox-gl.js\");\n/* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log(mapbox_gl__WEBPACK_IMPORTED_MODULE_0___default.a)\nconsole.log(mapbox_gl__WEBPACK_IMPORTED_MODULE_0___default.a.Map)\nmapbox_gl__WEBPACK_IMPORTED_MODULE_0___default.a.accessToken = 'pk.eyJ1Ijoiem1hcnN6YWwiLCJhIjoiY2pyOW5ud25zMGphNjQzbGluanB5b3Y3ayJ9.Mm92jc4dS81FaLIePR3cuA';\n\nconst map = new mapbox_gl__WEBPACK_IMPORTED_MODULE_0___default.a.Map({\n  container: 'map',\n  center: [-74.009, 40.705], // FullStack NY coordinates; alternatively, use [-87.6354, 41.8885] for Chicago\n  zoom: 12, // starting zoom\n  style: 'mapbox://styles/mapbox/streets-v10' // mapbox has lots of different map styles available.\n});\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (map);\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
