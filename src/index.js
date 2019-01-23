@@ -1,6 +1,4 @@
 import mapboxgl from 'mapbox-gl';
-console.log(mapboxgl)
-console.log(mapboxgl.Map)
 mapboxgl.accessToken = 'pk.eyJ1Ijoiem1hcnN6YWwiLCJhIjoiY2pyOW5ud25zMGphNjQzbGluanB5b3Y3ayJ9.Mm92jc4dS81FaLIePR3cuA';
 
 const map = new mapboxgl.Map({
@@ -9,5 +7,13 @@ const map = new mapboxgl.Map({
   zoom: 12, // starting zoom
   style: 'mapbox://styles/mapbox/streets-v10' // mapbox has lots of different map styles available.
 });
+
+const domElement = document.createElement('div')
+domElement.style.width = '32px';
+domElement.style.height = '32px';
+markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
+
+
+new mapboxgl.Marker(domElement).setLngLat([-87.641, 41.895]).addTo(map);
 
 export default map
