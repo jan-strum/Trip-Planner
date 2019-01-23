@@ -12,15 +12,14 @@ const map = new mapboxgl.Map({
 const domElement = document.createElement('div')
 domElement.style.width = '32px';
 domElement.style.height = '32px';
-domElement.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
+domElement.style.backgroundImage = 'url(http://i.imgur.com/WbMOfMl.png)';
 
 
-// new mapboxgl.Marker(domElement).setLngLat([-87.641, 41.895]).addTo(map);
+new mapboxgl.Marker(domElement).setLngLat([-87.641, 41.895]).addTo(map);
 
-// const newMarker = marker('restaurant', [-87.64, 41.894])
-// const anotherMarker = marker('hotel', [-88.64, 42.894])
-// newMarker.addTo(map);
-// anotherMarker.addTo(map)
-
+const newMarker = marker('restaurant', [-87.64, 41.894])
+const anotherMarker = marker('hotel', [-88.64, 42.894])
+newMarker.addTo(map);
+anotherMarker.addTo(map)
 
 module.exports = map
